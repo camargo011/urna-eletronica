@@ -1,0 +1,31 @@
+Algoritmo "Urna eletronica que fala o vencedor"
+Var
+
+v: vetor [0..4] de inteiro
+votos, i, j, cont1, cont2: inteiro
+
+Inicio
+
+repita
+escreval("DIGITE 1 PARA LULA, DIGITE 2 PARA BOLSONARO")
+leia(v[i])
+i <- i + 1
+votos <- votos + 1
+limpatela
+ate votos = 5
+escreval ("fim da eleição")
+para j de 0 ate 4 faca
+se v[j] = 1 entao
+cont1 <- cont1+1
+fimse
+se v[j] = 2 entao
+cont2 <- cont2 + 1
+fimse
+fimpara
+se cont1 > cont2 entao
+escreval("lula ganhou")
+senao
+escreval("bolsonaro ganhou")
+fimse
+
+Fimalgoritmo
